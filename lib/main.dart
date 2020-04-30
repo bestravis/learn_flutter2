@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:learn_flutter2/mqtt_test.dart';
 
 void main() {
   runApp(new MyApp());
@@ -34,6 +35,7 @@ class _MyHomePageState extends State<MyHomePage>{
 
   @override
   Widget build(BuildContext context) {
+    Mqtt.getInstance();
     return new Scaffold(
       appBar: new AppBar(
         title: Text('MateriaalApp 示例'),
